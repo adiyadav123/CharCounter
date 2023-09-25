@@ -36,9 +36,20 @@ const color_changer = (e) => {
     }
 }
 
+
+// word counter 
+
+const word_counter = (e) => {
+    let str = e.target.value;
+    let str_array = str.split(" ");
+    words_counter.innerText = str_array.length;
+}
+
+
 textarea.addEventListener("input", function(e){
     count_char(e);
     insta_limit_checker(e);
     twitter_limit_checker(e);
     color_changer(e);
+    word_counter(e);
 })
