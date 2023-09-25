@@ -1,48 +1,73 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CharCounter</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="container">
-        <h1 class="cont_head">
-            CharCounter
-        </h1>
-        <div class="input">
-            <input type="text" id="text_input" spellcheck="false" placeholder="Enter some text here!">
+      <div class="head">
+        <h1 class="cont_head">CharCounter</h1>
+      </div>
+      <div class="input">
+        <textarea
+          type="text"
+          id="text_input"
+          spellcheck="false"
+          placeholder="Enter some text here!"
+        ></textarea>
+      </div>
+      <div class="output">
+        <div class="first_two">
+          <div class="characters" id="">
+            <p id="characters" class="big">0</p>
+            <p class="tag">Characters</p>
+          </div>
+          <div class="words">
+            <p id="words" class="big">0</p>
+            <p class="tag">Words</p>
+          </div>
         </div>
-        <div class="output">
-            <div class="first_two">
-                <p class="characters" id="">
-                    Characters
-                    <p id="characters">
-                        0
-                    </p>
-                </p>
-                <p class="words">
-                    Words
-                    <p id="words">
-                        0
-                    </p>
-                </p>
-            </div>
-            <div class="last_two">
-                <p class="insta_limit">
-                    Instagram Limit
-                    <p class="limit" id="insta_limit">
-                        2200
-                    </p>
-                </p>
-                <p class="twitter_limit">
-                    Twitter Limit
-                    <p class="limit" id="twitter_limit">
-                        280
-                    </p>
-                </p>
-            </div>
+        <div class="last_two">
+          <div class="insta_limit">
+            <p class="limit big" id="insta_limit">2200</p>
+            <p class="tag">Instagram Limit</p>
+          </div>
+          <div class="twitter_limit">
+            <p class="limit big" id="twitter_limit">280</p>
+            <p class="tag">Twitter Limit</p>
+          </div>
         </div>
+      </div>
+    </div>
+    <div class="footer">
+      <footer>
+        <a href="https://github.com/adiyadav123" target="_blank">
+          <h4>© Aditya Yadav</h4></a
+        >
+      </footer>
     </div>
     <script src="script.js"></script>
-</body>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({
+        // reset: true,
+        distance: "60px",
+        duration: 2500,
+        delay: 400,
+      });
+
+      ScrollReveal().reveal(".container", { delay: 100, origin: "left" });
+      ScrollReveal().reveal(".cont_head", { delay: 600, origin: "left" });
+      ScrollReveal().reveal(".input", { delay: 400, origin: "right" });
+      ScrollReveal().reveal(".output", { delay: 600, origin: "bottom" });
+    </script>
+  </body>
 </html>
