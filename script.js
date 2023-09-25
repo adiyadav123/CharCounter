@@ -29,7 +29,7 @@ const color_changer = (e) => {
        
     }
 
-    if(insta_limit - e.target.value.length < 0){
+    if(in_limit - e.target.value.length < 0){
         insta_limit.style.color = "red";
     }else{
         insta_limit.style.color = "black";
