@@ -1,7 +1,13 @@
 # CharCounter
 
 > CharCounter is a tool for calculating characters and words.
+
+<br>
+
 > It comes with reminder for X (Twitter) and Instagram limits.
+
+<br>
+
 > It's free.
 
 <br>
@@ -15,5 +21,11 @@
 <h3>How to use?</h3>
 
 > Just simply type in the text box and the counter will start calculating by itself.
+
+<br>
+
 > If you want to clone the repository then you can clone it, but `don't forget to follow me on github`.
+
+<br>
+
 > Thanks 🗿
